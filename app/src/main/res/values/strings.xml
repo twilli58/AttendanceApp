@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">TamikoWilliamsAttendanceApp</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_user_options">UserOptionsActivity</string>
+    <string name="classBtn">My Classes</string>
+    <string name="rollBtn">Roll Call</string>
+    <string name="studentBtn">My Students</string>
+    <string name="enterBtn">Enter</string>
+    <string name="statBtn">View Stats</string>
+    <string name="welcomeTxt">Welcome</string>
 </resources>
