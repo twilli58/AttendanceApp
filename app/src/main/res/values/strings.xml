@@ -8,4 +8,6 @@
     <string name="enterBtn">Enter</string>
     <string name="statBtn">View Stats</string>
     <string name="welcomeTxt">Welcome</string>
+    <string name="title_activity_student_search">StudentSearchActivity</string>
+    <string name="nameSearchEditText">Student Name</string>
 </resources>

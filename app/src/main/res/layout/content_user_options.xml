@@ -33,7 +33,8 @@
             android:textColor="#ffffff"
             android:background="#84970e"
             android:textSize="25sp"
-            android:layout_weight="0.04" />
+            android:layout_weight="0.04"
+            android:onClick="click_Student" />
 
         <Button
             android:layout_width="184dp"

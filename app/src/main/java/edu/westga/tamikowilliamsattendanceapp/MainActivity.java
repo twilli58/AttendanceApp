@@ -1,5 +1,6 @@
 package edu.westga.tamikowilliamsattendanceapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -48,5 +49,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void click_Enter(View view) {
+        Intent intent = new Intent(view.getContext(), UserOptionsActivity.class);
+        startActivity(intent);
     }
 }

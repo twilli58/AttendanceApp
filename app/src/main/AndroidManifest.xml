@@ -27,6 +27,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.westga.tamikowilliamsattendanceapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".StudentSearchActivity"
+            android:label="@string/title_activity_student_search"
+            android:parentActivityName=".UserOptionsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.westga.tamikowilliamsattendanceapp.UserOptionsActivity" />
+        </activity>
     </application>
 
 </manifest>
