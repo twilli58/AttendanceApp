@@ -24,26 +24,37 @@
             android:background="#ffffff"
             android:layout_toLeftOf="@+id/searchView"
             android:layout_toStartOf="@+id/searchView"
-            android:hint="Search Students" />
+            android:hint="@string/nameSearch" />
 
-    <SearchView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/searchView"
-        android:layout_right="@+id/nameSearch"
-        android:layout_gravity="center_vertical"
-        android:layout_alignBottom="@+id/nameSearch"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="Look Up Student"
+        android:text="@string/studentLookTxt"
         android:id="@+id/studentLookTxt"
         android:layout_above="@+id/searchView"
         android:layout_centerHorizontal="true"
         android:textSize="25dp" />
+
+    <Button
+        style="@style/Platform.ThemeOverlay.AppCompat.Dark"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/searchBtn"
+        android:id="@+id/searchBtn"
+        android:layout_gravity="center_vertical"
+        android:layout_alignBottom="@+id/nameSearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="click_StudentList"
+        android:textSize="15dp"
+        android:background="#8a9c1a"
+        android:textColor="#ffffff" />
+
+
 
 </RelativeLayout>

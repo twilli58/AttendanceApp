@@ -10,4 +10,8 @@
     <string name="welcomeTxt">Welcome</string>
     <string name="title_activity_student_search">StudentSearchActivity</string>
     <string name="nameSearchEditText">Student Name</string>
+    <string name="title_activity_student_list">StudentListActivity</string>
+    <string name="searchBtn">Go</string>
+    <string name="nameSearch">Search Students</string>
+    <string name="studentLookTxt">Look Up Student</string>
 </resources>
