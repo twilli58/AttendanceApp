@@ -30,7 +30,7 @@ public class UserOptionsActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-    public void click_Student(View view) {
+    public void click_Manage(View view) {
         Intent intent = new Intent(view.getContext(), StudentSearchActivity.class);
         startActivity(intent);
     }

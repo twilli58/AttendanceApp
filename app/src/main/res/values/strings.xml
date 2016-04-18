@@ -4,7 +4,7 @@
     <string name="title_activity_user_options">UserOptionsActivity</string>
     <string name="classBtn">My Classes</string>
     <string name="rollBtn">Roll Call</string>
-    <string name="studentBtn">My Students</string>
+    <string name="manageBtn">Manage</string>
     <string name="enterBtn">Enter</string>
     <string name="statBtn">View Stats</string>
     <string name="welcomeTxt">Welcome</string>
