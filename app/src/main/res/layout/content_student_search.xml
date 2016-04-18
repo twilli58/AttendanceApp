@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="edu.westga.tamikowilliamsattendanceapp.StudentSearchActivity"
+    tools:context=".UIActivity.StudentSearchActivity"
     tools:showIn="@layout/activity_student_search">
 
 
@@ -55,6 +55,16 @@
         android:background="#8a9c1a"
         android:textColor="#ffffff" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/newStudentTxt"
+        android:id="@+id/newStudentTxt"
+        android:textSize="20dp"
+        android:layout_below="@+id/nameSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

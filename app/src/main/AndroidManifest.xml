@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UserOptionsActivity"
+            android:name=".UIActivity.UserOptionsActivity"
             android:label="@string/title_activity_user_options"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -28,23 +28,27 @@
                 android:value="edu.westga.tamikowilliamsattendanceapp.MainActivity" />
         </activity>
         <activity
-            android:name=".StudentSearchActivity"
+            android:name=".UIActivity.StudentSearchActivity"
             android:label="@string/title_activity_student_search"
-            android:parentActivityName=".UserOptionsActivity"
+            android:parentActivityName=".UIActivity.UserOptionsActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.westga.tamikowilliamsattendanceapp.UserOptionsActivity" />
+                android:value=".UIActivity.UserOptionsActivity" />
         </activity>
         <activity
-            android:name=".StudentListActivity"
+            android:name=".UIActivity.StudentListActivity"
             android:label="@string/title_activity_student_list"
-            android:parentActivityName=".StudentSearchActivity"
+            android:parentActivityName=".UIActivity.StudentSearchActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.westga.tamikowilliamsattendanceapp.StudentSearchActivity" />
+                android:value=".UIActivity.StudentSearchActivity" />
         </activity>
+        <activity
+            android:name=".Database.DatabaseActivity"
+            android:label="@string/title_activity_database"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

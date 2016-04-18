@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import edu.westga.tamikowilliamsattendanceapp.UIActivity.UserOptionsActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
