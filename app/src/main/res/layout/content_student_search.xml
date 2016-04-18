@@ -18,13 +18,14 @@
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:inputType="textPersonName"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="117dp"
             android:ems="10"
             android:id="@+id/nameSearch"
             android:background="#ffffff"
-            android:layout_toLeftOf="@+id/searchView"
-            android:layout_toStartOf="@+id/searchView"
-            android:hint="@string/nameSearch" />
+            android:hint="@string/nameSearch"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
 
@@ -33,13 +34,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
-        android:text="@string/studentLookTxt"
-        android:id="@+id/studentLookTxt"
-        android:textSize="25dp"
+        android:text="@string/searchTxt"
+        android:id="@+id/searchTxt"
+        android:textSize="35dp"
         android:layout_above="@+id/searchBtn"
-        android:layout_alignRight="@+id/nameSearch"
-        android:layout_alignEnd="@+id/nameSearch" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp" />
 
     <Button
         style="@style/Platform.ThemeOverlay.AppCompat.Dark"
@@ -52,18 +54,21 @@
         android:textSize="15dp"
         android:background="#8a9c1a"
         android:textColor="#ffffff"
-        android:layout_alignTop="@+id/nameSearch"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_above="@+id/newStudBtn"
+        android:layout_toRightOf="@+id/newCourseBtn"
+        android:layout_toEndOf="@+id/newCourseBtn" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:paddingRight="5dp"
-        android:text="@string/newStudentTxt"
-        android:id="@+id/newStudentTxt"
-        android:textSize="15dp"
+        android:text="Add New Student"
+        android:id="@+id/newStudBtn"
+        android:background="#84970e"
+        android:textColor="#ffffff"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:onClick="click_Database"
+        android:layout_marginTop="26dp"
         android:layout_below="@+id/nameSearch"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -71,15 +76,17 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="new"
-        android:id="@+id/button"
-        android:layout_toRightOf="@+id/newStudentTxt"
-        android:layout_toEndOf="@+id/newStudentTxt"
-        android:background="#84970e"
+        android:text="@string/newCourseBtn"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:id="@+id/newCourseBtn"
         android:textColor="#ffffff"
-        android:layout_alignBottom="@+id/newStudentTxt"
-        android:layout_alignTop="@+id/newStudentTxt"
-        android:onClick="click_Database" />
+        android:background="#84970e"
+        android:layout_alignTop="@+id/newStudBtn"
+        android:layout_toRightOf="@+id/newStudBtn"
+        android:layout_toEndOf="@+id/newStudBtn"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
 
 
 </RelativeLayout>
