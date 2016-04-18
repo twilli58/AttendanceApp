@@ -33,12 +33,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="45dp"
         android:text="@string/studentLookTxt"
         android:id="@+id/studentLookTxt"
-        android:layout_above="@+id/searchView"
-        android:layout_centerHorizontal="true"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:layout_above="@+id/searchBtn"
+        android:layout_alignRight="@+id/nameSearch"
+        android:layout_alignEnd="@+id/nameSearch" />
 
     <Button
         style="@style/Platform.ThemeOverlay.AppCompat.Dark"
@@ -47,24 +48,38 @@
         android:text="@string/searchBtn"
         android:id="@+id/searchBtn"
         android:layout_gravity="center_vertical"
-        android:layout_alignBottom="@+id/nameSearch"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:onClick="click_StudentList"
         android:textSize="15dp"
         android:background="#8a9c1a"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/nameSearch"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:paddingRight="5dp"
         android:text="@string/newStudentTxt"
         android:id="@+id/newStudentTxt"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/nameSearch"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new"
+        android:id="@+id/button"
+        android:layout_toRightOf="@+id/newStudentTxt"
+        android:layout_toEndOf="@+id/newStudentTxt"
+        android:background="#84970e"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/newStudentTxt"
+        android:layout_alignTop="@+id/newStudentTxt"
+        android:onClick="click_Database" />
 
 
 </RelativeLayout>

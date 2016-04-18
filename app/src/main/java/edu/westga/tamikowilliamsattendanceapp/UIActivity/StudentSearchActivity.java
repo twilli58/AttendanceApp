@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import edu.westga.tamikowilliamsattendanceapp.Database.DatabaseActivity;
 import edu.westga.tamikowilliamsattendanceapp.R;
 import edu.westga.tamikowilliamsattendanceapp.UIActivity.StudentListActivity;
 
@@ -32,6 +33,10 @@ public class StudentSearchActivity extends AppCompatActivity {
     }
     public void click_StudentList(View view) {
         Intent intent = new Intent(view.getContext(), StudentListActivity.class);
+        startActivity(intent);
+    }
+    public void click_Database(View view) {
+        Intent intent = new Intent(view.getContext(), DatabaseActivity.class);
         startActivity(intent);
     }
 

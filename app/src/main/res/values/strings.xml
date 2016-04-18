@@ -14,6 +14,6 @@
     <string name="searchBtn">Go</string>
     <string name="nameSearch">Search Students</string>
     <string name="studentLookTxt">Look Up Student</string>
-    <string name="newStudentTxt">Create a New Student</string>
+    <string name="newStudentTxt">or click here to add a new student</string>
     <string name="title_activity_database">DatabaseActivity</string>
 </resources>

@@ -9,15 +9,10 @@ public class Course {
     private String _name;
     private int _studentNumber;
 
-    public Course() {
-
-    }
-
     public Course(int id, String name, int studentNumber) {
         this._id = id;
         this._name = name;
         this._studentNumber = studentNumber;
-
 
     }
 
