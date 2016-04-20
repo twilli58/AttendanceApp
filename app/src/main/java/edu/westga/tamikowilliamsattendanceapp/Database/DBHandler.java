@@ -43,7 +43,7 @@ public class DBHandler extends SQLiteOpenHelper {
         onCreate(db);
 
     }
-    public void addStudent(Student student) {
+    public void addStudent(Students student) {
 
         ContentValues values = new ContentValues();
         values.put(COLUMN_STUDENTLASTNAME, student.get_lastName());
@@ -54,14 +54,14 @@ public class DBHandler extends SQLiteOpenHelper {
         db.insert(TABLE_STUDENT, null, values);
         db.close();
     }
-    public Student findStudent(String studentlast) {
+    public Students findStudent(String studentlast) {
         String query = "Select * FROM " + TABLE_STUDENT + " WHERE " + COLUMN_STUDENTLASTNAME + " =  \"" + studentlast + "\"";
 
         SQLiteDatabase db = this.getWritableDatabase();
 
         Cursor cursor = db.rawQuery(query, null);
 
-        Student student = new Student();
+        Students student = new Students();
 
         if (cursor.moveToFirst()) {
             cursor.moveToFirst();
@@ -86,7 +86,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         Cursor cursor = db.rawQuery(query, null);
 
-        Student student = new Student();
+        Students student = new Students();
 
         if (cursor.moveToFirst()) {
             student.set_id(Integer.parseInt(cursor.getString(0)));

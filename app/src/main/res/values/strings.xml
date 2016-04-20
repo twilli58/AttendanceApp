@@ -6,7 +6,7 @@
     <string name="rollBtn">Roll Call</string>
     <string name="manageBtn">Manage</string>
     <string name="enterBtn">Enter</string>
-    <string name="statBtn">View Stats</string>
+    <string name="statBtn">Stats</string>
     <string name="welcomeTxt">Welcome</string>
     <string name="title_activity_student_search">StudentSearchActivity</string>
     <string name="nameSearchEditText">Student Name</string>
@@ -17,4 +17,12 @@
     <string name="newStudentTxt">click here to add a new student</string>
     <string name="title_activity_database">DatabaseActivity</string>
     <string name="newCourseBtn">Add New Course</string>
+    <string name="editStudentBtn">Edit</string>
+    <string name="findStudentBtn">Find</string>
+    <string name="addStudentBtn">Add</string>
+    <string name="deleteStudentBtn">Delete</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="chooseTxt">Choose one</string>
+    <string name="studentChooseBtn">Student</string>
+    <string name="courseChooseBtn">Course</string>
 </resources>

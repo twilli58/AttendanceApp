@@ -10,14 +10,14 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import edu.westga.tamikowilliamsattendanceapp.UIActivity.UserOptionsActivity;
+import edu.westga.tamikowilliamsattendanceapp.UIActivity.UserPortalActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_enter);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click_Enter(View view) {
-        Intent intent = new Intent(view.getContext(), UserOptionsActivity.class);
+        Intent intent = new Intent(view.getContext(), UserPortalActivity.class);
         startActivity(intent);
     }
 }

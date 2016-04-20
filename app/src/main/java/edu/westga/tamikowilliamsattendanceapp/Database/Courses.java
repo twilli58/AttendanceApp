@@ -3,20 +3,20 @@ package edu.westga.tamikowilliamsattendanceapp.Database;
 /**
  * Created by Miko on 4/17/2016.
  */
-public class Course {
+public class Courses {
 
     private int _id;
     private String _name;
     private int _studentNumber;
 
-    public Course(int id, String name, int studentNumber) {
+    public Courses(int id, String name, int studentNumber) {
         this._id = id;
         this._name = name;
         this._studentNumber = studentNumber;
 
     }
 
-    public Course(String name, int studentNumber) {
+    public Courses(String name, int studentNumber) {
         this._name = name;
         this._studentNumber = studentNumber;
     }

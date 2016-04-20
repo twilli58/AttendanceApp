@@ -1,10 +1,7 @@
 package edu.westga.tamikowilliamsattendanceapp.Database;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -33,7 +30,7 @@ public class DatabaseActivity extends AppCompatActivity {
         String last = studentLastBox.getText().toString();
         String first = studentFirstBox.getText().toString();
 
-        Student student = new Student();
+        Students student = new Students();
 
         dbHandler.addStudent(student);
         studentLastBox.setText("");
@@ -42,7 +39,7 @@ public class DatabaseActivity extends AppCompatActivity {
     public void lookupStudent (View view) {
         DBHandler dbHandler = new DBHandler(this, null, null, 1);
 
-        Student student =
+        Students student =
                 dbHandler.findStudent(studentLastBox.getText().toString());
 
         if (student != null) {

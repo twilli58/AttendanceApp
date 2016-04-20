@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UIActivity.UserOptionsActivity"
+            android:name=".UIActivity.UserPortalActivity"
             android:label="@string/title_activity_user_options"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -30,11 +30,11 @@
         <activity
             android:name=".UIActivity.StudentSearchActivity"
             android:label="@string/title_activity_student_search"
-            android:parentActivityName=".UIActivity.UserOptionsActivity"
+            android:parentActivityName=".UIActivity.UserPortalActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UIActivity.UserOptionsActivity" />
+                android:value=".UIActivity.UserPortalActivity" />
         </activity>
         <activity
             android:name=".UIActivity.StudentListActivity"
@@ -48,6 +48,10 @@
         <activity
             android:name=".Database.DatabaseActivity"
             android:label="@string/title_activity_database"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UIActivity.ChooseActivity"
+            android:label="@string/title_activity_choose"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

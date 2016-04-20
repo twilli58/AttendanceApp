@@ -16,20 +16,20 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="83dp"
-        android:layout_weight="0.72"
-        android:layout_marginTop="5dp">
+        android:layout_weight="0.56"
+        android:layout_marginTop="50dp">
 
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="294dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="50dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Create A New Student"
+            android:text="Student Data"
             android:id="@+id/createTxt"
             android:layout_gravity="center_horizontal"
-            android:textColor="#ffffff"
-            android:textSize="25dp"
+            android:textColor="#84970e"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TableRow
@@ -124,25 +124,57 @@
                 android:layout_column="1" />
         </TableRow>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="32dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:text="@string/findStudentBtn"
+                android:id="@+id/findStudentBtn"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff"
+                android:background="#84970e"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="@string/addStudentBtn"
+                android:id="@+id/newStudentBtn"
+                android:textColor="#ffffff"
+                android:background="#84970e"
+                android:textSize="18dp"
+                android:onClick="newStudent" />
+
+            <Button
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="@string/editStudentBtn"
+                android:id="@+id/editStudentBtn"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:background="#84970e"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="@string/deleteStudentBtn"
+                android:id="@+id/deleteStudentBtn"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:background="#84970e"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
     </TableLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:weightSum="1">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145dp"
-            android:text="Add Student"
-            android:id="@+id/newStudentBtn"
-            android:textColor="#ffffff"
-            android:background="#84970e"
-            android:layout_weight="0.06"
-            android:textSize="18dp"
-            android:onClick="newStudent"/>
-    </LinearLayout>
 
 </LinearLayout>

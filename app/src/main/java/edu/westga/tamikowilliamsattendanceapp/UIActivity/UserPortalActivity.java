@@ -8,15 +8,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import edu.westga.tamikowilliamsattendanceapp.Database.DatabaseActivity;
 import edu.westga.tamikowilliamsattendanceapp.R;
 
-public class StudentSearchActivity extends AppCompatActivity {
+public class UserPortalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_search);
+        setContentView(R.layout.activity_user_portal);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -30,12 +29,8 @@ public class StudentSearchActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-    public void click_StudentList(View view) {
-        Intent intent = new Intent(view.getContext(), StudentListActivity.class);
-        startActivity(intent);
-    }
-    public void click_Database(View view) {
-        Intent intent = new Intent(view.getContext(), DatabaseActivity.class);
+    public void click_Manage(View view) {
+        Intent intent = new Intent(view.getContext(), ChooseActivity.class);
         startActivity(intent);
     }
 
