@@ -38,6 +38,10 @@ public class UserPortalActivity extends AppCompatActivity {
         Intent intent = new Intent(view.getContext(), CoursePortalActivity.class);
         startActivity(intent);
     }
+    public void click_Stats(View view) {
+        Intent intent = new Intent(view.getContext(), StudentSearchActivity.class);
+        startActivity(intent);
+    }
 
 
 }
