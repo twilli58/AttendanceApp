@@ -37,7 +37,7 @@
                 android:value=".UIActivity.UserPortalActivity" />
         </activity>
         <activity
-            android:name=".UIActivity.StudentListActivity"
+            android:name=".UIActivity.CourseListActivity"
             android:label="@string/title_activity_student_list"
             android:parentActivityName=".UIActivity.StudentSearchActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -52,6 +52,10 @@
         <activity
             android:name=".UIActivity.ChooseActivity"
             android:label="@string/title_activity_choose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UIActivity.CoursePortalActivity"
+            android:label="@string/title_activity_course_portal"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

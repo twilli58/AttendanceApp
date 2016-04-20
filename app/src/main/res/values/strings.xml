@@ -25,4 +25,6 @@
     <string name="chooseTxt">Choose one</string>
     <string name="studentChooseBtn">Student</string>
     <string name="courseChooseBtn">Course</string>
+    <string name="title_activity_course_portal">CoursePortalActivity</string>
+    <string name="selectCourseTxt">Select a course</string>
 </resources>
