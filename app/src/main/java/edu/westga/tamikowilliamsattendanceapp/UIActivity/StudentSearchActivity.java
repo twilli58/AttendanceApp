@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import edu.westga.tamikowilliamsattendanceapp.Database.DatabaseActivity;
 import edu.westga.tamikowilliamsattendanceapp.R;
 
 public class StudentSearchActivity extends AppCompatActivity {

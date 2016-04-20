@@ -1,4 +1,4 @@
-package edu.westga.tamikowilliamsattendanceapp.Database;
+package edu.westga.tamikowilliamsattendanceapp.UIActivity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import edu.westga.tamikowilliamsattendanceapp.Database.DBHandler;
+import edu.westga.tamikowilliamsattendanceapp.Database.Students;
 import edu.westga.tamikowilliamsattendanceapp.R;
 
 public class DatabaseActivity extends AppCompatActivity {
