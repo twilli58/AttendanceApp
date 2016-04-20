@@ -24,5 +24,20 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp" />
 
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/spinner"
+        android:textSize="35dp"
+        android:textColor="#84970e"
+        android:layout_below="@+id/selectCourseTxt"
+        android:layout_centerHorizontal="true"
+
+        android:popupBackground="#fefefd"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:dropDownWidth="150dp"
+        android:spinnerMode="dialog" />
+
 
 </RelativeLayout>

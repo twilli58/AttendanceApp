@@ -27,4 +27,17 @@
     <string name="courseChooseBtn">Course</string>
     <string name="title_activity_course_portal">CoursePortalActivity</string>
     <string name="selectCourseTxt">Select a course</string>
+
+    <string name="course_prompt">Choose a course</string>
+    <string-array name="course_arrays">
+        <item>Math</item>
+        <item>Art</item>
+        <item>History</item>
+        <item>English</item>
+        <item>Science</item>
+        <item>Spanish</item>
+        <item>Language</item>
+    </string-array>
+    <string name="title_activity_student_stats">StudentStatsActivity</string>
+    <string name="title_activity_course_stats">CourseStatsActivity</string>
 </resources>
