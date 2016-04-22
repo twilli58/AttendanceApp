@@ -4,9 +4,14 @@ import java.util.Date;
 
 /**
  * Created by Miko on 4/18/2016.
+ * Changing as of 4/22/2016.
  */
 public class Attendance {
 
+    public static String TABLE_NAME;
+    public static String _ID;
+    public static String DATE;
+    public static String ENROLL;
     private int _id;
     private Date _date;
     private int _studentID;

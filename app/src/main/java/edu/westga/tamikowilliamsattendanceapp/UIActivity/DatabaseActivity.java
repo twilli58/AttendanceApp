@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import edu.westga.tamikowilliamsattendanceapp.Database.DBHandler;
+import edu.westga.tamikowilliamsattendanceapp.Database.DBAdapter;
 import edu.westga.tamikowilliamsattendanceapp.Database.Students;
 import edu.westga.tamikowilliamsattendanceapp.R;
 
@@ -15,6 +15,9 @@ public class DatabaseActivity extends AppCompatActivity {
     EditText studentLastBox;
     EditText studentFirstBox;
 
+    public DatabaseActivity() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,22 +30,22 @@ public class DatabaseActivity extends AppCompatActivity {
 
     }
     public void newStudent (View view) {
-        DBHandler dbHandler = new DBHandler(this, null, null, 1);
+      /*  DBAdapter dbAdapter = new DBAdapter(this, null, null, 1);
 
         String last = studentLastBox.getText().toString();
         String first = studentFirstBox.getText().toString();
 
         Students student = new Students();
 
-        dbHandler.addStudent(student);
+        dbAdapter.addStudent(student);
         studentLastBox.setText("");
-        studentFirstBox.setText("");
+        studentFirstBox.setText("");*/
     }
     public void lookupStudent (View view) {
-        DBHandler dbHandler = new DBHandler(this, null, null, 1);
+      /*  DBAdapter dbAdapter = new DBAdapter(this, null, null, 1);
 
         Students student =
-                dbHandler.findStudent(studentLastBox.getText().toString());
+                dbAdapter.findStudent(studentLastBox.getText().toString());
 
         if (student != null) {
             idView.setText(String.valueOf(student.get_id()));
@@ -50,14 +53,14 @@ public class DatabaseActivity extends AppCompatActivity {
             studentFirstBox.setText(String.valueOf(student.get_firstName()));
         } else {
             idView.setText("No Match Found");
-        }
+        }*/
     }
 
     public void removeStudent (View view) {
-        DBHandler dbHandler = new DBHandler(this, null,
+       /* DBAdapter dbAdapter = new DBAdapter(this, null,
                 null, 1);
 
-        boolean result = dbHandler.deleteStudent(
+        boolean result = dbAdapter.deleteStudent(
                 studentLastBox.getText().toString());
 
         if (result)
@@ -67,7 +70,7 @@ public class DatabaseActivity extends AppCompatActivity {
             studentFirstBox.setText("");
         }
         else
-            idView.setText("No Match Found");
+            idView.setText("No Match Found");*/
     }
 
 }

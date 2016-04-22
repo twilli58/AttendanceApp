@@ -10,10 +10,6 @@ public class Students {
     private String _firstName;
     private int _courseID;
 
-    public Students() {
-
-    }
-
 
     public Students(int id, String lastName, String firstName, int course) {
         this._id = id;
