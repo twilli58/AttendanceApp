@@ -14,7 +14,7 @@ import edu.westga.tamikowilliamsattendanceapp.Database.DBAdapter;
             DBAdapter dba = new DBAdapter(context);
             try {
                 dba.open();
-                dba.insertCourse(name);
+                //dba.insertCourse(name);
                 dba.close();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -61,7 +61,7 @@ import edu.westga.tamikowilliamsattendanceapp.Database.DBAdapter;
             DBAdapter dba = new DBAdapter(context);
             try {
                 dba.open();
-                int student_id = dba.getStudentId(firstName, lastName);
+                int student_id = dba.findStudent(firstName, lastName);
                 if (student_id != -1) {
                     int course_id = dba.getCourseId(course);
                     if (course_id != -1) {

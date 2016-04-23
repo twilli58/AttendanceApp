@@ -19,10 +19,10 @@ public class Attendance {
     public static String TABLE_NAME;
 
     public static int markAttendance(Context context, String firstName, String lastName, String course, String date) {
-        DBAdapter dba = new DBAdapter(context);
+       DBAdapter dba = new DBAdapter(context);
         try {
             dba.open();
-            int student_id = dba.getStudentId(firstName, lastName);
+            int student_id = dba.findStudent(firstName, lastName);
             if (student_id != -1) {
                 int course_id = dba.getCourseId(course);
                 if (course_id != -1) {
@@ -36,5 +36,6 @@ public class Attendance {
         }
         return -1;
     }
+
 }
 
