@@ -7,16 +7,20 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import edu.westga.tamikowilliamsattendanceapp.Database.DBAdapter;
-import edu.westga.tamikowilliamsattendanceapp.Database.Students;
+import edu.westga.tamikowilliamsattendanceapp.Database.DBContract;
+import edu.westga.tamikowilliamsattendanceapp.Model.Student;
 import edu.westga.tamikowilliamsattendanceapp.R;
 
 public class DatabaseActivity extends AppCompatActivity {
     TextView idView;
     EditText studentLastBox;
     EditText studentFirstBox;
+    String firstName;
+    String lastName;
+    int studentID;
 
     public DatabaseActivity() {
-
+        int studentID = 0;
     }
 
     @Override
@@ -27,41 +31,36 @@ public class DatabaseActivity extends AppCompatActivity {
         idView = (TextView) findViewById(R.id.studentId);
         studentLastBox = (EditText) findViewById(R.id.lastEdit);
         studentFirstBox = (EditText) findViewById(R.id.firstEdit);
-
+        DBContract.Student student = new DBContract.Student();
     }
     public void newStudent (View view) {
-      /*  DBAdapter dbAdapter = new DBAdapter(this, null, null, 1);
+        DBAdapter dbAdapter = new DBAdapter(this);
 
-        String last = studentLastBox.getText().toString();
-        String first = studentFirstBox.getText().toString();
-
-        Students student = new Students();
-
-        dbAdapter.addStudent(student);
+        dbAdapter.addStudent(firstName, lastName);
         studentLastBox.setText("");
-        studentFirstBox.setText("");*/
+        studentFirstBox.setText("");
     }
     public void lookupStudent (View view) {
-      /*  DBAdapter dbAdapter = new DBAdapter(this, null, null, 1);
+        /*DBAdapter dbAdapter = new DBAdapter(this);
 
-        Students student =
-                dbAdapter.findStudent(studentLastBox.getText().toString());
+        Student studentID = dbAdapter.findStudent();
 
-        if (student != null) {
-            idView.setText(String.valueOf(student.get_id()));
+        if (studentID != null) {
+            idView.setText(String.valueOf(studentID.toString()));
 
-            studentFirstBox.setText(String.valueOf(student.get_firstName()));
+            studentFirstBox.setText(String.valueOf(studentID.toString()));
         } else {
             idView.setText("No Match Found");
         }*/
     }
 
-    public void removeStudent (View view) {
-       /* DBAdapter dbAdapter = new DBAdapter(this, null,
-                null, 1);
+    public void edit (View view) {
 
-        boolean result = dbAdapter.deleteStudent(
-                studentLastBox.getText().toString());
+    }
+    public void removeStudent (View view) {
+       /*DBAdapter dbAdapter = new DBAdapter(this);
+
+        boolean result = dbAdapter.removeStudent(id);
 
         if (result)
         {
@@ -71,6 +70,9 @@ public class DatabaseActivity extends AppCompatActivity {
         }
         else
             idView.setText("No Match Found");*/
+    }
+    public void editStudent() {
+
     }
 
 }
