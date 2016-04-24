@@ -64,6 +64,14 @@
         <activity
             android:name=".UIActivity.CourseStatsActivity"
             android:label="@string/title_activity_course_stats"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UIActivity.CourseEditActivity"
+            android:label="CourseEditActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UIActivity.CourseActivity"
+            android:label="@string/title_activity_course"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -10,12 +10,12 @@ import android.view.View;
 
 import edu.westga.tamikowilliamsattendanceapp.R;
 
-public class ChooseActivity extends AppCompatActivity {
+public class CourseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose);
+        setContentView(R.layout.activity_course);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,12 +29,9 @@ public class ChooseActivity extends AppCompatActivity {
         });
     }
 
-    public void click_Student(View view) {
-        Intent intent = new Intent(view.getContext(), StudentActivity.class);
+    public void click_Edit(View view) {
+        Intent intent = new Intent(view.getContext(), CourseEditActivity.class);
         startActivity(intent);
     }
-    public void click_Course(View view) {
-        Intent intent = new Intent(view.getContext(), CourseActivity.class);
-        startActivity(intent);
-    }
+
 }

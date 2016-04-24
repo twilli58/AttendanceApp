@@ -20,15 +20,12 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Present"
-        android:id="@+id/presentCheckBox"
+        android:layout_gravity="end"
+        android:text="Delete"
+        android:id="@+id/deleteCheckBox"
+        android:layout_marginLeft="50dp"
         android:checked="false" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Absent"
-        android:id="@+id/absentCheckBox"
-        android:checked="false" />
+
 
 </LinearLayout>

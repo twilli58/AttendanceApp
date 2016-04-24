@@ -31,7 +31,15 @@
     <string name="course_prompt">Choose a course</string>
     <string name="selectedStatsTxt">Student Stats</string>
     <string name="selectStatsBtn">Go</string>
-
+    <string name="title_activity_student_stats">StudentStatsActivity</string>
+    <string name="title_activity_course_stats">CourseStatsActivity</string>
+    <string name="courseNameTxt">Course Name</string>
+    <string name="title_activity_course_edit">CourseEditActivity</string>
+    <string name="title_activity_course">CourseActivity</string>
+    <string name="findCourseBtn">find</string>
+    <string name="addCourseBtn">add</string>
+    <string name="editCourseBtn">edit</string>
+    <string name="deleteCourseBtn">delete</string>
 
     <string-array name="course_arrays">
         <item>Select One</item>
@@ -43,8 +51,6 @@
         <item>Spanish</item>
         <item>Language</item>
     </string-array>
-    <string name="title_activity_student_stats">StudentStatsActivity</string>
-    <string name="title_activity_course_stats">CourseStatsActivity</string>
-    <string name="courseNameTxt">Course Name</string>
+
 
 </resources>
