@@ -29,13 +29,12 @@
             android:id="@+id/chooseTxt"
             android:layout_gravity="center_horizontal"
             android:textColor="#84970e"
-            android:textSize="35dp" />
+            android:textSize="30dp" />
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_height="wrap_content">
 
             <Button
                 android:layout_width="145dp"

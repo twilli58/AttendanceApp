@@ -37,7 +37,7 @@
                 android:value=".UIActivity.UserPortalActivity" />
         </activity>
         <activity
-            android:name=".UIActivity.CourseListActivity"
+            android:name=".UIActivity.CourseStudentListActivity"
             android:label="@string/title_activity_student_list"
             android:parentActivityName=".UIActivity.StudentSearchActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -46,7 +46,7 @@
                 android:value=".UIActivity.StudentSearchActivity" />
         </activity>
         <activity
-            android:name=".UIActivity.DatabaseActivity"
+            android:name=".UIActivity.StudentActivity"
             android:label="@string/title_activity_database"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

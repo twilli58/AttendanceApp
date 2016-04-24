@@ -30,11 +30,11 @@ public class ChooseActivity extends AppCompatActivity {
     }
 
     public void click_Student(View view) {
-        Intent intent = new Intent(view.getContext(), DatabaseActivity.class);
+        Intent intent = new Intent(view.getContext(), StudentActivity.class);
         startActivity(intent);
     }
     public void click_Course(View view) {
-        Intent intent = new Intent(view.getContext(), DatabaseActivity.class);
+        Intent intent = new Intent(view.getContext(), StudentActivity.class);
         startActivity(intent);
     }
 }

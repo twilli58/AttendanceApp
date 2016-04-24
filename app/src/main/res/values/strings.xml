@@ -13,7 +13,7 @@
     <string name="title_activity_student_list">StudentListActivity</string>
     <string name="searchBtn">Go</string>
     <string name="nameSearch">Search Students or Course</string>
-    <string name="searchTxt">Search</string>
+    <string name="searchTxt">Search Stats</string>
     <string name="newStudentTxt">click here to add a new student</string>
     <string name="title_activity_database">DatabaseActivity</string>
     <string name="newCourseBtn">Add New Course</string>
@@ -26,10 +26,15 @@
     <string name="studentChooseBtn">Student</string>
     <string name="courseChooseBtn">Course</string>
     <string name="title_activity_course_portal">CoursePortalActivity</string>
-    <string name="selectCourseTxt">Select a course</string>
-
+    <string name="selectedCourseTxt">Courses</string>
+    <string name="selectCourseBtn">Select</string>
     <string name="course_prompt">Choose a course</string>
+    <string name="selectedStatsTxt">Student's Stats</string>
+    <string name="selectStatsBtn">Go</string>
+
+
     <string-array name="course_arrays">
+        <item>Select One</item>
         <item>Math</item>
         <item>Art</item>
         <item>History</item>
@@ -40,4 +45,6 @@
     </string-array>
     <string name="title_activity_student_stats">StudentStatsActivity</string>
     <string name="title_activity_course_stats">CourseStatsActivity</string>
+    <string name="courseNameTxt">Course Name</string>
+
 </resources>

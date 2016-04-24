@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/selectCourseTxt"
+        android:text="@string/selectedCourseTxt"
         android:id="@+id/selectCourseTxt"
         android:textColor="#84970e"
         android:textSize="35dp"
@@ -33,11 +33,20 @@
         android:textColor="#84970e"
         android:layout_below="@+id/selectCourseTxt"
         android:layout_centerHorizontal="true"
-
         android:popupBackground="#fefefd"
         android:gravity="fill_horizontal|center_horizontal"
         android:dropDownWidth="150dp"
         android:spinnerMode="dialog" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectCourseBtn"
+        android:id="@+id/selectCourseBtn"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/selectCourseTxt"
+        android:layout_alignStart="@+id/selectCourseTxt"
+        android:onClick="click_Select" />
 
 
 </RelativeLayout>

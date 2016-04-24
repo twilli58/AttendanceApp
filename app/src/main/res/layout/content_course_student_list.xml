@@ -10,13 +10,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".UIActivity.CourseListActivity"
-    tools:showIn="@layout/activity_course_list">
+    tools:context=".UIActivity.CourseStudentListActivity"
+    tools:showIn="@layout/activity_course_student_list">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Course List"
+        android:text="@string/courseNameTxt"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -30,5 +30,6 @@
         android:id="@+id/studentListView"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
