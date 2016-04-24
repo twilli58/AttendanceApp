@@ -20,7 +20,8 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
         android:textColor="#8b9d1c"
         android:textSize="25dp" />
 

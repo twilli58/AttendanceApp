@@ -33,6 +33,7 @@ public class CourseStudentListActivity extends AppCompatActivity {
     }
     private void populateCourseList() {
         listView = (ListView) findViewById(R.id.studentListView);
+
         List<String> students = new ArrayList<>();
         students.add("Crissy Miller");
         students.add("John Bass");
@@ -42,9 +43,8 @@ public class CourseStudentListActivity extends AppCompatActivity {
         students.add("Karen Riddle");
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_list_item_1,
-                students );
+                this,R.layout.single_row,
+                R.id.textView8, students );
 
         listView.setAdapter(arrayAdapter);
     }
