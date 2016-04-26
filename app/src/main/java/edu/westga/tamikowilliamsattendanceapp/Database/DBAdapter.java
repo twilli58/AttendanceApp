@@ -234,4 +234,12 @@ public class DBAdapter {
         }
         cursor.close();
     }
+
+    public SQLiteDatabase getDb() {
+        return db;
+    }
+
+    public void setDb(SQLiteDatabase db) {
+        this.db = db;
+    }
 }

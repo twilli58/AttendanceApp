@@ -123,7 +123,7 @@
                 android:textColor="#ffffff"
                 android:background="#84970e"
                 android:textSize="18dp"
-                android:onClick="newStudent" />
+                android:onClick="newCourse" />
 
             <Button
                 android:layout_width="76dp"

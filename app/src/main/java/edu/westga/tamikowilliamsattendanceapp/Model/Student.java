@@ -13,8 +13,9 @@ public class Student {
     String lastName;
 
 
-    public Student(Student lastName, Student firstName) {}
+    public Student() {
 
+    }
 
     public static boolean addStudent(Context context, String firstName, String lastName) {
         DBAdapter dba = new DBAdapter(context);
@@ -64,6 +65,22 @@ public class Student {
             e.printStackTrace();
         }
     }
+
+    public String getFirstName() {
+        return firstName;
     }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+}
 
 

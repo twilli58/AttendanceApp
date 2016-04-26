@@ -109,7 +109,8 @@
                 android:layout_marginRight="10dp"
                 android:textColor="#ffffff"
                 android:background="#84970e"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:onClick="findStudent" />
 
             <Button
                 android:layout_width="76dp"
@@ -129,7 +130,8 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="#ffffff"
                 android:background="#84970e"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:onClick="editStudent" />
 
             <Button
                 android:layout_width="76dp"
@@ -139,7 +141,8 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="#ffffff"
                 android:background="#84970e"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:onClick="removeStudent" />
 
 
         </LinearLayout>

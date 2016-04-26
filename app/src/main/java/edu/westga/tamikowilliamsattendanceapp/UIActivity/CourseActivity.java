@@ -91,7 +91,7 @@ public class CourseActivity extends AppCompatActivity {
                 Course.removeCourse(this, id);
                 Toast.makeText(this, "Course deleted.", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "There are students enrolled. Cannot Delete.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "There are students enrolled. Cannot be Deleted.", Toast.LENGTH_SHORT).show();
             }
         }
     }
