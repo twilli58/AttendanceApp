@@ -30,7 +30,7 @@ public class StudentSearchActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public void click_CourseStats(View view) {
-        Intent intent = new Intent(view.getContext(), CourseStatsActivity.class);
+        Intent intent = new Intent(view.getContext(), StudentStatsActivity.class);
         startActivity(intent);
     }
 

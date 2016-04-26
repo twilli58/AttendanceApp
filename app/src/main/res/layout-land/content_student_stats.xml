@@ -10,8 +10,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".UIActivity.StudentStatsActivity"
-    tools:showIn="@layout/activity_student_stats">
+    tools:context=".UIActivity.StudentStatsActivity">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_marginBottom="10dp"
-        android:text="Student:"
+        android:text="Student Name:"
         android:id="@+id/textView3"
         android:layout_below="@+id/selectStatsTxt"
         android:layout_alignParentLeft="true"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Choose Month:"
+        android:text="Choose Date:"
         android:id="@+id/textView4"
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
@@ -64,25 +64,25 @@
     </LinearLayout>
 
     <EditText
-        android:layout_width="70dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText4"
         android:layout_alignBottom="@+id/textView3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4" />
+        android:layout_alignLeft="@+id/selectStatsTxt"
+        android:layout_alignStart="@+id/selectStatsTxt" />
 
-    <Spinner
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerStats"
+        android:id="@+id/editText9"
         android:layout_below="@+id/editText4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4"
-        android:spinnerMode="dropdown" />
+        android:layout_alignLeft="@+id/selectStatsTxt"
+        android:layout_alignStart="@+id/selectStatsTxt" />
+
 
 
 </RelativeLayout>

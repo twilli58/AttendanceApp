@@ -27,7 +27,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/chooseTxt"
             android:id="@+id/chooseTxt"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:textColor="#84970e"
             android:textSize="30dp" />
 
@@ -40,7 +40,7 @@
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
                 android:text="@string/studentChooseBtn"
-                android:layout_marginLeft="110dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -54,7 +54,7 @@
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
                 android:text="@string/courseChooseBtn"
-                android:layout_marginLeft="110dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"

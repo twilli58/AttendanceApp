@@ -14,7 +14,7 @@ public class DBContract {
     }
 
     public static final class Course implements BaseColumns  {
-        public static final String TABLE_NAME = "course";
+        public static final String TABLE_NAME = "content_course";
         public static final String NAME = "name";
         public static final String IS_ACTIVE = "is_active";
     }

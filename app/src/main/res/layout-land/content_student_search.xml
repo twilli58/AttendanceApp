@@ -14,18 +14,19 @@
     tools:showIn="@layout/activity_student_search">
 
 
-        <EditText
-            android:layout_width="275dp"
-            android:layout_height="50dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/nameSearch"
-            android:background="#ffffff"
-            android:hint="@string/nameSearch"
-            android:layout_marginLeft="45dp"
-            android:layout_alignTop="@+id/searchBtn"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameSearch"
+        android:background="#ffffff"
+        android:hint="@string/nameSearch"
+        android:layout_marginLeft="79dp"
+        android:layout_marginStart="79dp"
+        android:layout_alignTop="@+id/searchBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
     <Button
@@ -38,11 +39,12 @@
         android:background="#8a9c1a"
         android:textColor="#ffffff"
         android:onClick="click_CourseStats"
-        android:layout_marginRight="84dp"
-        android:layout_marginEnd="5dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/nameSearch"
+        android:layout_toEndOf="@+id/nameSearch"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="71dp" />
 
 
 </RelativeLayout>

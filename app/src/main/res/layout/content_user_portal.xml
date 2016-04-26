@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,52 +15,50 @@
 
 
     <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="1"
-            android:layout_marginTop="252dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical">
 
         <Button
-            android:layout_width="184dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_width="155dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
             android:text="@string/manageBtn"
             android:id="@+id/manageBtn"
             android:layout_gravity="center_horizontal"
             android:textColor="#ffffff"
             android:background="#84970e"
-            android:textSize="25sp"
-            android:layout_weight="0.04"
+            android:textSize="20sp"
             android:onClick="click_Manage" />
 
             <Button
-                android:layout_width="184dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_width="155dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/rollBtn"
                 android:id="@+id/rollBtn"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff"
                 android:background="#84970e"
-                android:textSize="25sp"
-                android:layout_weight="0.04"
+                android:textSize="20sp"
                 android:onClick="click_RollCall" />
 
             <Button
-                android:layout_width="184dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_width="155dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/statBtn"
                 android:id="@+id/statBtn"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff"
                 android:background="#84970e"
-                android:textSize="25sp"
-                android:layout_weight="0.04"
+                android:textSize="20sp"
                 android:onClick="click_Stats" />
 
 
@@ -68,15 +66,5 @@
         </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Teacher&apos;s Portal"
-        android:id="@+id/portalTxt"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_gravity="center_vertical" />
-</RelativeLayout>
+
+</LinearLayout>

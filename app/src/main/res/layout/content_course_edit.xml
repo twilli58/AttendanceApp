@@ -55,8 +55,9 @@
         android:layout_alignBottom="@+id/textView10"
         android:layout_alignRight="@+id/linearLayout3"
         android:layout_alignEnd="@+id/linearLayout3"
-        android:layout_toRightOf="@+id/editText7"
-        android:layout_toEndOf="@+id/editText7" />
+
+        android:layout_alignLeft="@+id/addStudCourseBtn"
+        android:layout_alignStart="@+id/addStudCourseBtn" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -65,8 +66,8 @@
         android:layout_below="@+id/editText5"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/editText5"
-        android:layout_alignStart="@+id/editText5" />
+        android:layout_toRightOf="@+id/editText7"
+        android:layout_toEndOf="@+id/editText7" />
 
     <ListView
         android:layout_width="match_parent"

@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/useroption"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="edu.westga.tamikowilliamsattendanceapp.UIActivity.CourseActivity"
-    tools:showIn="@layout/activity_course">
+    tools:context="edu.westga.tamikowilliamsattendanceapp.UIActivity.CourseActivity">
 
 
     <TableLayout
@@ -25,21 +24,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:paddingLeft="19dp"
+                android:paddingLeft="120dp"
                 android:paddingRight="5dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Course ID:"
-                android:id="@+id/courseID" />
+                android:id="@+id/courseID"
+                android:layout_column="9" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:paddingLeft="19dp"
+                android:paddingLeft="25dp"
                 android:paddingRight="5dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="not assigned"
-                android:id="@+id/notAssigned2" />
+                android:id="@+id/notAssigned2"
+                android:layout_column="11" />
         </TableRow>
 
         <TableRow
@@ -50,11 +51,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:paddingLeft="15dp"
+                android:paddingLeft="120dp"
                 android:paddingRight="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Course Name:"
-                android:id="@+id/courseNameTxt" />
+                android:id="@+id/courseNameTxt"
+                android:layout_column="9" />
 
             <EditText
                 android:layout_width="135dp"
@@ -62,7 +64,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingRight="20dp"
                 android:id="@+id/courseNameEdit"
-                android:layout_column="1" />
+                android:layout_column="11" />
 
         </TableRow>
 
@@ -74,11 +76,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:paddingLeft="15dp"
+                android:paddingLeft="120dp"
                 android:paddingRight="5dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="#Student:"
-                android:id="@+id/numStudents" />
+                android:id="@+id/numStudents"
+                android:layout_column="9" />
 
             <EditText
                 android:layout_width="40dp"
@@ -87,7 +90,7 @@
                 android:paddingLeft="19dp"
                 android:paddingRight="5dp"
                 android:id="@+id/numEdit"
-                android:layout_column="1" />
+                android:layout_column="11" />
         </TableRow>
 
         <TableRow
@@ -99,7 +102,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="95dp"
             android:layout_height="32dp"
             android:weightSum="1">
 
@@ -108,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/findCourseBtn"
                 android:id="@+id/findCourseBtn"
-                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
                 android:layout_marginRight="10dp"
                 android:textColor="#ffffff"
                 android:background="#84970e"
@@ -119,7 +123,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/addCourseBtn"
                 android:id="@+id/newCourseBtn"
-                android:layout_gravity="center"
                 android:textColor="#ffffff"
                 android:background="#84970e"
                 android:textSize="18dp"

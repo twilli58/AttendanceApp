@@ -20,18 +20,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="80dp">
 
-            <TextView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="25dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Student Data"
-                android:id="@+id/createTxt"
-                android:layout_gravity="center_horizontal"
-                android:textColor="#ffffff"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+
         </TableRow>
 
         <TableRow
@@ -41,8 +30,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:paddingLeft="75dp"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="95dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Student ID"
                 android:id="@+id/studentId" />
@@ -50,8 +39,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:paddingLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="25dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Not Assigned"
                 android:id="@+id/notAssigned" />
@@ -64,8 +53,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:paddingLeft="75dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="95dp"
                 android:paddingRight="5dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Last Name:"
@@ -74,7 +63,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="8dp"
                 android:paddingRight="20dp"
                 android:id="@+id/lastEdit"
                 android:layout_column="1" />
@@ -89,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:paddingLeft="75dp"
+                android:paddingLeft="95dp"
                 android:paddingRight="5dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="First Name:"
@@ -113,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:paddingLeft="19dp"
+                android:paddingLeft="95dp"
                 android:paddingRight="5dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Course:"

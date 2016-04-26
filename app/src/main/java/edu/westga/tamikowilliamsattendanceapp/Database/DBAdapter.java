@@ -50,10 +50,12 @@ public class DBAdapter {
                     + Enroll.COURSE + " INTEGER NOT NULL,"
                     + Enroll.ACTIVE + " INTEGER NOT NULL"
                     + ");");
-            db.execSQL("CREATE TABLE " + edu.westga.tamikowilliamsattendanceapp.Model.Attendance.TABLE_NAME + " ("
-                    + edu.westga.tamikowilliamsattendanceapp.Model.Attendance._ID + " INTEGER PRIMARY KEY,"
-                    + edu.westga.tamikowilliamsattendanceapp.Model.Attendance.DATE + " TEXT NOT NULL,"
-                    + edu.westga.tamikowilliamsattendanceapp.Model.Attendance.ENROLL + " INTEGER NOT NULL,"
+            db.execSQL("CREATE TABLE " + Attendance.TABLE_NAME + " ("
+                    + Attendance._ID + " INTEGER PRIMARY KEY,"
+                    + Attendance.DATE + " TEXT NOT NULL,"
+                    + Attendance.PRESENT + " INTEGER NOT NULL,"
+                    + Attendance.ENROLL + " INTEGER NOT NULL,"
+                    + Attendance.ACTIVE + " INTEGER NOT NULL"
                     + ");");
         }
 
@@ -76,23 +78,41 @@ public class DBAdapter {
         helper.close();
     }
 
-    public void addStudent(String firstName, String lastName) {
+    public boolean addStudent(String firstName, String lastName) {
         Cursor cursor = db.rawQuery("SELECT " + Student._ID + " FROM " + Student.TABLE_NAME +
                         " WHERE " + Student.FIRST_NAME + "=? AND " + Student.LAST_NAME + "=?",
                 new String[]{firstName, lastName});
+        boolean ret = false;
         if (cursor.getCount() == 0) {
             ContentValues args = new ContentValues();
             args.put(Student.FIRST_NAME, firstName);
             args.put(Student.LAST_NAME, lastName);
             args.put(Student.IS_ACTIVE, 1);
             db.insert(Student.TABLE_NAME, null, args);
+            ret = true;
         }
         cursor.close();
+
+        cursor = db.rawQuery("SELECT " + Student._ID + " FROM " + Student.TABLE_NAME
+                        + " WHERE " + Student.FIRST_NAME + "=? AND " + Student.LAST_NAME
+                        + "=? AND " + Student.IS_ACTIVE + "=0",
+                new String[]{firstName, lastName});
+        if (cursor.getCount() == 1) {
+            ContentValues args = new ContentValues();
+            args.put(Student.FIRST_NAME, firstName);
+            args.put(Student.LAST_NAME, lastName);
+            args.put(Student.IS_ACTIVE, 1);
+            db.update(Student.TABLE_NAME, args, "WHERE " + Student._ID + "=?",
+                    new String[] {String.valueOf(cursor.getLong(0))});
+            ret = true;
+        }
+        return ret;
     }
 
     public int findStudent(String firstName, String lastName) {
         Cursor cursor = db.rawQuery("SELECT " + Student._ID + " FROM " + Student.TABLE_NAME +
-                        " WHERE " + Student.FIRST_NAME + "=? AND " + Student.LAST_NAME + "=?",
+                        " WHERE " + Student.FIRST_NAME + "=? AND " + Student.LAST_NAME + "=? AND "
+                        + Student.IS_ACTIVE + "=1",
                 new String[]{firstName, lastName});
         int ret = -1;
         if (cursor.getCount() > 0) {
@@ -118,24 +138,53 @@ public class DBAdapter {
                 new String[]{String.valueOf(id)});
     }
 
-    public void addCourse(String name) {
+    public boolean addCourse(String name) {
         Cursor cursor = db.rawQuery("SELECT " + Course._ID + " FROM " + Course.TABLE_NAME +
                         " WHERE " + Course.NAME + "=? ",
                 new String[]{name});
+        boolean ret = false;
         if (cursor.getCount() == 0) {
             ContentValues args = new ContentValues();
             args.put(Course.NAME, name);
             args.put(Course.IS_ACTIVE, 1);
             db.insert(Course.TABLE_NAME, null, args);
+            ret = true;
         }
         cursor.close();
+
+        cursor = db.rawQuery("SELECT " + Course._ID + " FROM " + Course.TABLE_NAME
+                        + " WHERE " + Course.NAME + "=? AND " + Course.IS_ACTIVE + "=0",
+                new String[]{name});
+        if (cursor.getCount() == 1) {
+            ContentValues args = new ContentValues();
+            args.put(Course.NAME, name);
+            args.put(Course.IS_ACTIVE, 1);
+            db.update(Course.TABLE_NAME, args, "WHERE " + Course._ID + "=?",
+                    new String[] {String.valueOf(cursor.getLong(0))});
+            ret = true;
+        }
+
+        return ret;
     }
 
     public int getCourseId(String name) {
         Cursor cursor = db.rawQuery("SELECT " + Course._ID + " FROM " + Course.TABLE_NAME +
-                        " WHERE " + Course.NAME + "=?",
+                        " WHERE " + Course.NAME + "=? AND " + Course.IS_ACTIVE + "=1",
                 new String[]{name});
         int ret = -1;
+        if (cursor.getCount() > 0) {
+            cursor.moveToFirst();
+            ret = (int) cursor.getInt(0);
+        }
+        cursor.close();
+        return ret;
+    }
+
+    public int countStudents(int id) {
+        Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM " + Enroll.TABLE_NAME +
+                        " WHERE " + Enroll.COURSE + "=? AND " + Enroll.ACTIVE + "=1",
+                new String[]{String.valueOf(id)});
+        int ret = 0;
         if (cursor.getCount() > 0) {
             cursor.moveToFirst();
             ret = (int) cursor.getInt(0);
@@ -173,18 +222,16 @@ public class DBAdapter {
     }
 
     public void markAttendance(String date, int present, int enroll) {
-        Cursor cursor = db.rawQuery("SELECT " + edu.westga.tamikowilliamsattendanceapp.Model.Attendance._ID + " FROM " + edu.westga.tamikowilliamsattendanceapp.Model.Attendance.TABLE_NAME +
-                        " WHERE " + edu.westga.tamikowilliamsattendanceapp.Model.Attendance.ENROLL + "=? AND " + edu.westga.tamikowilliamsattendanceapp.Model.Attendance.DATE + "=?",
+        Cursor cursor = db.rawQuery("SELECT " + Attendance._ID + " FROM " + Attendance.TABLE_NAME +
+                        " WHERE " + Attendance.ENROLL + "=? AND " + Attendance.DATE + "=?",
                 new String[]{String.valueOf(enroll), String.valueOf(date)});
         if (cursor.getCount() == 0) {
             ContentValues args = new ContentValues();
-            args.put(edu.westga.tamikowilliamsattendanceapp.Model.Attendance.DATE, date);
-            args.put(edu.westga.tamikowilliamsattendanceapp.Model.Attendance.ENROLL, enroll);
+            args.put(Attendance.DATE, date);
+            args.put(Attendance.ENROLL, enroll);
             args.put(Attendance.PRESENT, present);
-            db.insert(edu.westga.tamikowilliamsattendanceapp.Model.Attendance.TABLE_NAME, null, args);
+            db.insert(Attendance.TABLE_NAME, null, args);
         }
         cursor.close();
     }
-
-
 }
