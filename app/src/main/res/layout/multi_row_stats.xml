@@ -17,22 +17,23 @@
         android:id="@+id/studentNameStatsTxt" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="178dp"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
         android:id="@+id/dateEditText"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:hint="Date" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
+        android:text="Present Totals"
         android:id="@+id/presentTotal" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="181dp"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
@@ -43,13 +44,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
+        android:text="Absent Totals"
         android:id="@+id/absentTxt" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="171dp"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/absentTotalEditText" />
+        android:id="@+id/absentTotalEditText"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

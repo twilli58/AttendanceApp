@@ -29,7 +29,7 @@
     <string name="selectedCourseTxt">Courses</string>
     <string name="selectCourseBtn">Select</string>
     <string name="course_prompt">Choose a course</string>
-    <string name="selectedStatsTxt">Student Stats</string>
+    <string name="selectedStatsTxt">View Student Stats</string>
     <string name="selectStatsBtn">Go</string>
     <string name="title_activity_student_stats">StudentStatsActivity</string>
     <string name="title_activity_course_stats">CourseStatsActivity</string>

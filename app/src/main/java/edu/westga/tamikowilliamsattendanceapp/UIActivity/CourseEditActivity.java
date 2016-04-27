@@ -16,8 +16,6 @@ import edu.westga.tamikowilliamsattendanceapp.R;
 
 public class CourseEditActivity extends AppCompatActivity {
     ListView listView;
-    // Define string array.
-    private ListView listValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -4,7 +4,7 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.test.TouchUtils;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+
 
 import edu.westga.tamikowilliamsattendanceapp.UIActivity.StudentActivity;
 
@@ -441,7 +441,7 @@ public class StudentActivityTests extends ActivityInstrumentationTestCase2<Stude
     }
 
 
-        //************** Private Helpers *******************************
+    //************** Private Helpers *******************************
 
     //button for testing the add
     private void buttonTapAdd() {
@@ -475,12 +475,5 @@ public class StudentActivityTests extends ActivityInstrumentationTestCase2<Stude
                 (Button) activity.findViewById(R.id.deleteStudentBtn);
         TouchUtils.clickView(this, deleteButton);
     }
-   private void clearFields() {
-       StudentActivity activity = getActivity();
-       final EditText firstNameText = (EditText) activity.findViewById(R.id.firstEdit);
-       final EditText lastNameText = (EditText) activity.findViewById(R.id.lastEdit);
 
-       firstNameText.setText("");
-       lastNameText.setText("");
-   }
 }

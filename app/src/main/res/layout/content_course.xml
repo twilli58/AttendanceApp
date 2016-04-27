@@ -69,7 +69,6 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -88,6 +87,7 @@
                 android:paddingRight="5dp"
                 android:id="@+id/numEdit"
                 android:layout_column="1" />
+
         </TableRow>
 
         <TableRow
@@ -109,10 +109,11 @@
                 android:text="@string/findCourseBtn"
                 android:id="@+id/findCourseBtn"
                 android:layout_gravity="center"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:textColor="#ffffff"
                 android:background="#84970e"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:onClick="findCourse" />
 
             <Button
                 android:layout_width="76dp"
@@ -120,6 +121,7 @@
                 android:text="@string/addCourseBtn"
                 android:id="@+id/newCourseBtn"
                 android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
                 android:textColor="#ffffff"
                 android:background="#84970e"
                 android:textSize="18dp"
@@ -144,7 +146,8 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="#ffffff"
                 android:background="#84970e"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:onClick="removeCourse" />
 
 
         </LinearLayout>
